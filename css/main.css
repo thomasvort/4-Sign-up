@@ -1,0 +1,23 @@
+.container {
+    display: inline-block;
+    width: 800px;
+    background-color: yellow;
+    /* margin-top: 80px;
+    margin-left: calc((100% - 800px) / 2 );
+    margin-right: calc((100% - 800px) / 2 );
+    virsus 80px  calc 2x krastines  0 apacia
+    1 funkcijos eilute atstoja 3 virsutines */
+    margin: 80px calc((100% - 800px) / 2) 0;
+}
+    .container > .left {
+        display: inline-block;
+        width: 40%;
+        float: left;
+        background-color: greenyellow;
+}
+    .container > .right {
+        display: inline-block;
+        width: 60%;
+        float: left;
+        background-color: red;
+}
