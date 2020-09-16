@@ -11,97 +11,125 @@ body * {
     body {
         background-color: #02B7D9;
     }
+    .background {
+        width: 100%;
+        height: 100vh;
+        filter: blur(20px);
+        object-fit: cover;
+        object-position: center;
+
+        }
+    
     .container {
         display: inline-block;
         width: 800px;
-        margin: 80px  calc( (100% - 800px) / 2 );
-        background-color: white;
+        /* margin-top: 100px;
+        margin: calc( (100% - 800px) / 2 ); */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
         .left-column {
             display: inline-block;
             float: left;
-            padding: 30px;
+            padding: 40px;
             width: 40%;
             background-color: #282c91;
-        }
-        .title {
+            background-image: url(../kalnas2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
 
+            position: absolute;
+            top: 30px;
+            bottom: 30px;
         }
-        .footer {
-
+        /* .title {
+        } */
+        .footer { 
+            position: absolute;
+            left: 40px;
+            right: 40px;
+            bottom: 20px;
         }
             .link {
-
+                color: #fff;
             }
-            .amp {
-
-            }
+            /* .amp {
+            } */
         .right-column {
             display: inline-block;
-            float: left;
+            float: right;
             width: 60%;
             padding: 60px;
-            background-color: #fff;
+            background-color:#fff;
+            position: relative;
         }
         .close {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 30px;
+            color: #777;
+            line-height: 56px;
+            cursor: pointer;
 
+            position: absolute;
+            top: 0;
+            right: 0;
         }
         .form {
             display: inline-block;
             width: 100%;
-
-        }   .form-row {
+        }   
+            .form-row {
                 display: inline-block;
                 width: 100%;
                 margin-bottom: 30px;
-
         }
             .form-row:last-of-type {
                 margin-bottom: 0;
             }
-            label {
-                display: inline-block;
-                width: 100%;
-                margin-bottom: 5px;
-                color: #777777;
-                text-transform: uppercase;
-                font-size: 20px;
-
+                label {
+                    display: inline-block;
+                    width: 100%;
+                    margin-bottom: 5px;
+                    color: #777777;
+                    text-transform: uppercase;
+                    font-size: 16px;
             }
-            input {
-                display: inline-block;
-                width: 100%;
-                /* border-left: none;
-                border-right: none;
-                border-top: none; */
-                border: none;
-                border-bottom: solid grey;
-
+                input {
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 20px;
+                    border: none;
+                    border-bottom: 1px solid #999999;
             }
-            .btn {
-                display: inline-block;
-                background-color: #282c91;
-                color: #ffffff;
-                padding: 10px;
-                padding-left: 50px;
-                padding-right: 50px;
-                border-radius: 20px;
-                line-height: 20px;
-
-
-            }
-            .or {
-                display: inline-block;
-                padding: 10px;
-                padding-top: 10px;
-                line-height: 20px;
-                padding-left: 30px;
-                padding-right: 30px;
-
-            }
-            .blue-link {
-                display: inline-block;
-                padding: 10px;
-                padding-top: 10px;
-                line-height: 20px;
-            }
+                .btn {
+                    display: inline-block;
+                    background-color: #282c91;
+                    color: #ffffff;
+                    padding: 10px;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    border-radius: 20px;
+                    line-height: 20px;
+                    cursor: pointer;
+                }
+                .or {
+                    display: inline-block;
+                    padding-top: 10px;
+                    line-height: 20px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                .blue-link {
+                    display: inline-block;
+                    padding: 10px;
+                    padding-top: 10px;
+                    line-height: 20px;
+                    text-decoration: none;
+                }
